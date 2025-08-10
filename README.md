@@ -19,7 +19,7 @@ Uma extensão do Chrome que automatiza o processo de envio de convites de conex�
 1. **Clone ou baixe este repositório**
 
    ```bash
-   git clone https://github.com/seu-usuario/linkedin-auto-connect.git
+   git clone https://github.com/KevinLopes23/Linkedln-Auto-Connect.git
    ```
 
 2. **Abra o Chrome e vá para as extensões**
