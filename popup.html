@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        width: 300px;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+      .button {
+        background-color: #0073b1;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        margin: 10px 0;
+        font-size: 14px;
+      }
+      .button:hover {
+        background-color: #005885;
+      }
+      .button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+      .status {
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+      }
+      .success {
+        background-color: #d4edda;
+        color: #155724;
+      }
+      .error {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+      .info {
+        background-color: #d1ecf1;
+        color: #0c5460;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>LinkedIn Auto Connect</h3>
+    <p>Automatiza conexões na página atual do LinkedIn</p>
+
+    <button id="startBtn" class="button">Iniciar Automação</button>
+    <button id="stopBtn" class="button" disabled>Parar</button>
+
+    <div id="status" class="status info">Pronto para iniciar</div>
+
+    <div id="stats">
+      <p>Conexões enviadas: <span id="connectCount">0</span></p>
+      <p>Tempo de espera: <span id="delay">2</span>s entre ações</p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
